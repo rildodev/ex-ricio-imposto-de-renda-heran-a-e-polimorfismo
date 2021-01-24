@@ -15,8 +15,6 @@ public class Programa {
 
 		List<Contribuinte> contribuinte = new ArrayList<>();
 
-		Contribuinte cont;
-
 		Locale.setDefault(Locale.US);
 		Scanner leitorInteiro = new Scanner(System.in);
 		Scanner leitor = new Scanner(System.in);

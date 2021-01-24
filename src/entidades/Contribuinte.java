@@ -32,4 +32,6 @@ public abstract class Contribuinte {
 	}
 
 	public abstract Double impostoPago();
+
+	public abstract Double impostoArrecadado();
 }

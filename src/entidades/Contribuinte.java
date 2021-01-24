@@ -1,6 +1,6 @@
 package entidades;
 
-public class Contribuinte {
+public abstract class Contribuinte {
 
 	private String nome;
 	private Double rendaAnual;
@@ -30,4 +30,6 @@ public class Contribuinte {
 	public void setRendaAnual(Double rendaAnual) {
 		this.rendaAnual = rendaAnual;
 	}
+
+	public abstract Double impostoPago();
 }

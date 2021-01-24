@@ -25,16 +25,10 @@ public class PessoaJuridica extends Contribuinte {
 	public Double impostoPago() {
 		double imposto = 0;
 		if (getFuncionarios() < 10) {
-			imposto *= 0.16;
+			imposto = getRendaAnual() * 0.16;
 		} else {
 			imposto = getRendaAnual() * 0.14;
 		}
 		return imposto;
-	}
-
-	@Override
-	public Double impostoArrecadado() {
-		// TODO Auto-generated method stub
-		return null;
 	}
 }

@@ -25,19 +25,14 @@ public class PessoaFisica extends Contribuinte {
 	public Double impostoPago() {
 		double imposto = 0;
 		if (getRendaAnual() < 20000.00) {
-			imposto *= 0.15;
+			imposto = getRendaAnual() * 0.15;
 		} else {
 			if (getGastosSaude() > 0) {
 				imposto = (getRendaAnual() * 0.25) - (getGastosSaude() * 0.50);
+			} else {
+				imposto = getRendaAnual() * 0.25;
 			}
 		}
 		return imposto;
 	}
-
-	@Override
-	public Double impostoArrecadado() {
-
-		return null;
-	}
-
 }

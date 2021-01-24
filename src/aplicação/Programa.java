@@ -1,9 +1,12 @@
 package aplicação;
 
+import java.util.Locale;
+
 public class Programa {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
+		Locale.setDefault(Locale.US);
 
 	}
 

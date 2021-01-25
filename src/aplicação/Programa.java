@@ -43,16 +43,14 @@ public class Programa {
 		}
 		System.out.println();
 		System.out.println("Imposto pago:");
+		double soma = 0;
 		for (Contribuinte c : contribuinte) {
-			System.out.println(c.getNome() + ": " + String.format("%.2f", c.impostoPago()));
+			System.out.println(c.getNome() + ": R$ " + String.format("%.2f", c.impostoPago()));
+			soma += c.impostoPago();
 		}
 
 		System.out.println();
-		double soma = 0;
-		for (Contribuinte c : contribuinte) {
-			soma += c.impostoPago();
-		}
-		System.out.printf("Imposto arrecadado: " + String.format("%.2f", soma));
+		System.out.printf("Imposto arrecadado: R$ " + String.format("%.2f", soma));
 
 		leitor.close();
 	}

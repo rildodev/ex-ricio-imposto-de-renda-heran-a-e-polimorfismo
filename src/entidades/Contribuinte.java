@@ -32,5 +32,4 @@ public abstract class Contribuinte {
 	}
 
 	public abstract Double impostoPago();
-
 }
